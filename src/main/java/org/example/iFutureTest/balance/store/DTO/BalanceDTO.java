@@ -1,7 +1,6 @@
 package org.example.iFutureTest.balance.store.DTO;
 
 import lombok.*;
-import org.example.iFutureTest.user.store.DTO.UserDTO;
 
 @Data
 @Builder
@@ -10,10 +9,7 @@ import org.example.iFutureTest.user.store.DTO.UserDTO;
 public class BalanceDTO {
     @NonNull
     private Long id;
-
-    private Long balance;
-
     @NonNull
-    private UserDTO user;
+    private Long balance;
 
 }

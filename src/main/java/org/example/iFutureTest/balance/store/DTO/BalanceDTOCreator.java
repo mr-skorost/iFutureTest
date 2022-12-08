@@ -5,12 +5,12 @@ import org.springframework.stereotype.Component;
 
 
 @Component
-public class BalanceDtoCreator {
+public class BalanceDTOCreator {
 
     public BalanceDTO makeBalanceDTO(BalanceEntity entity){
         return BalanceDTO.builder()
                 .id(entity.getId())
-                .balance(entity.getId())
+                .balance(entity.getBalance())
                 .build();
     }
 }
