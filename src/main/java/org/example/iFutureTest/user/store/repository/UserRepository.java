@@ -1,2 +1,4 @@
-package org.example.iFutureTest.user.store.repository;public interface UserRepository {
+package org.example.iFutureTest.user.store.repository;
+
+public interface UserRepository {
 }
