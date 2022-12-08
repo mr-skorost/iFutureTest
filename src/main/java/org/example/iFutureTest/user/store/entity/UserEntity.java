@@ -24,4 +24,14 @@ public class UserEntity {
     @OneToMany(mappedBy = "user")
     private List<BalanceEntity> balances;
 
+    public UserEntity(Long id, String name, List<BalanceEntity> balances) {
+        this.id = id;
+        this.name = name;
+        this.balances = balances;
+    }
+
+    public UserEntity(Long id, String name) {
+        this.id = id;
+        this.name = name;
+    }
 }
