@@ -10,7 +10,7 @@ import javax.persistence.*;
 @Getter
 @Setter
 @Entity
-@Table(name = "users")
+@Table(name = "balance")
 @NoArgsConstructor
 public class BalanceEntity {
     @Id
@@ -21,12 +21,12 @@ public class BalanceEntity {
     private Long balance;
 
     @ManyToOne (optional=false, cascade=CascadeType.ALL)
-    private UserEntity userEntity;
+    private UserEntity user;
 
     public BalanceEntity(Long id, Long balance, UserEntity userEntity) {
         this.id = id;
         this.balance = balance;
-        this.userEntity = userEntity;
+        this.user = userEntity;
     }
 
 
